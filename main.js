@@ -103,7 +103,7 @@ function generate() {
   }
   createRandomSolution(bord);
   // console.log(bord);
-  removeFromBord(bord, 18);
+  removeFromBord(bord, 9);
   // console.log(trial);
 
   //adds bord to the html bord.
@@ -161,8 +161,8 @@ function solve() {
       if (row.childNodes[j].childNodes[0].value == "") {
         bord[i].push(0);
       } else {
-        // var value = parseInt(row.childNodes[j].childNodes[0].value, 10);
-        // bord[i].push(value);
+        var value = parseInt(row.childNodes[j].childNodes[0].value, 10);
+        bord[i].push(value);
       }
     }
   }
